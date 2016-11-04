@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="def_vol">12</integer>
+    <integer name="max_vol">50</integer>
+    <integer name="cur_temp">18</integer>
+</resources>

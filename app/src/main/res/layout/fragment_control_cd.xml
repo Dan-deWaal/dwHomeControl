@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/controlPanel"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_CD_Fragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="@dimen/controlPanel_half"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/button_padding_half"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="@string/cd_track_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_track_prev"
+                    android:drawableLeft="@android:drawable/ic_media_previous"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="@string/cd_track_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_track_next"
+                    android:drawableRight="@android:drawable/ic_media_next"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:text="@string/cd_disc_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_disc_prev"
+                    android:drawableLeft="@android:drawable/ic_media_rew"
+                    android:layout_weight="1" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:text="@string/cd_disc_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_disc_next"
+                    android:drawableRight="@android:drawable/ic_media_ff"
+                    android:layout_weight="1" />
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+</LinearLayout>

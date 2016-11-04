@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_Lights_TVRoom_Fragment">
+
+    <TableLayout
+        android:layout_width="@dimen/controlPanel_half"
+        android:layout_height="@dimen/controlPanel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="@dimen/blank_button_width"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="@dimen/sliderbar_width"
+                android:layout_height="@dimen/blank_button_height" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/tvroom_lights_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_front_lights"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="@dimen/button_padding_half" />
+
+            <Button
+                android:text="@string/off"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_front_lights_off" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sld_front_lights"
+                android:layout_gravity="center_vertical"
+                android:max="100" />
+
+            <Button
+                android:text="@string/on"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_front_lights_on" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/tvroom_lights_rear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_rear_lights"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/button_padding_half"
+                android:textAlignment="textEnd" />
+
+            <Button
+                android:text="@string/off"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_rear_lights_off" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:id="@+id/sld_rear_lights"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:text="@string/on"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_rear_lights_on" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/tvroom_lights_feature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_feature_lights"
+                android:textColor="@android:color/black"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="@dimen/button_padding_half"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="@string/off"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_feature_lights_off" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sld_feature_lights"
+                android:max="100"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:text="@string/on"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_feature_lights_on" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="@string/tvroom_lights_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tableLayout"
+        android:layout_marginLeft="@dimen/blank_button_width"
+        android:layout_marginTop="120dp"
+        android:id="@+id/btn_tvroom_lights_save" />
+
+</RelativeLayout>

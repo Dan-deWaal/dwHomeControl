@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_Lights_Deck_Fragment">
+
+
+    <TableLayout
+        android:layout_width="@dimen/controlPanel_half"
+        android:layout_height="@dimen/controlPanel"
+        android:layout_gravity="center_horizontal">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="@dimen/blank_button_width"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="@dimen/sliderbar_width"
+                android:layout_height="@dimen/blank_button_height" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/deck_lights_deck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_deck_lights"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="@dimen/button_padding_half" />
+
+            <Button
+                android:text="Off"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_deck_lights_off" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sld_deck_lights"
+                android:layout_gravity="center_vertical"
+                android:max="100" />
+
+            <Button
+                android:text="On"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_deck_lights_on" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/deck_lights_yard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_yard_lights"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/button_padding_half"
+                android:textAlignment="textEnd" />
+
+            <Button
+                android:text="Off"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_yard_lights_off" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="1"
+                android:id="@+id/sld_yard_lights"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:text="On"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_yard_lights_on" />
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

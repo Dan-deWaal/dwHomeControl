@@ -1,0 +1,251 @@
+<resources>
+    <!--Main Strings-->
+    <string name="app_name">dwHomeControl</string>
+
+    <!--Menu Strings-->
+    <string name="menu_settings">Settings</string>
+    <string name="menu_custom_buttons">Custom Buttons</string>
+    <string name="menu_login">User Login</string>
+    <string name="menu_scheduler">Scheduler</string>
+
+    <!--Tab Names-->
+    <string-array name="tabNames">
+        <item>Home</item>
+        <item>TVRoom</item>
+        <item>Entrance</item>
+        <item>Garage</item>
+        <item>Deck</item>
+    </string-array>
+
+    <!--Button Strings-->
+    <string name="room_off">Room Off</string>
+    <string name="lock_door">Lock Door</string>
+    <string name="unlock_door">Unlock Door</string>
+    <string name="door_lock">Front Door&#8230;</string>
+    <string name="gate">Gate&#8230;</string>
+    <string name="security">Security&#8230;</string>
+    <string name="alarm_status">Alarm&#8230;</string>
+    <string name="alarm_on">Arm Alarm</string>
+    <string name="alarm_off">Disarm Alarm</string>
+    <string name="lights_entrance">Entrance Lights&#8230;</string>
+    <string name="lights_deck">Deck Lights&#8230;</string>
+    <string name="lights_garage">Garage Lights&#8230;</string>
+    <string name="lights_all_off">Lights All Off</string>
+    <string name="lights_all_on">Lights Full On</string>
+    <string name="power">House Power&#8230;</string>
+    <string name="system">System&#8230;</string>
+    <string name="weather">Weather&#8230;</string>
+    <string name="blinds_open">Open Blinds</string>
+    <string name="blinds_50">Blinds 50%</string>
+    <string name="blinds_10">Blinds 10%</string>
+    <string name="blinds_close">Close Blinds</string>
+    <string name="dvd">Watch DVD</string>
+    <string name="game">Watch XBox</string>
+    <string name="tv">Watch MySkyHD</string>
+    <string name="cd">Listen CD</string>
+    <string name="radio">Listen Radio</string>
+    <string name="media_off">Media Off</string>
+    <string name="heatpump">Heatpump On</string>
+    <string name="heatpump_heat">Heat</string>
+    <string name="heatpump_cool">Cool</string>
+    <string name="heatpump_off">Heatpump Off</string>
+    <string name="lights_on">Lights On</string>
+    <string name="lights_off">Lights Off</string>
+    <string name="lights_tv">Lights TV</string>
+    <string name="lights_reading">Lights Reading</string>>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
+    <!--TV Buttons-->
+    <string name="tv_text">Text</string>
+    <string name="tv_help">Help</string>
+    <string name="tv_sky">SKY</string>
+    <string name="tv_guide">Guide</string>
+    <string name="tv_0">0</string>
+    <string name="tv_1">1</string>
+    <string name="tv_2">2</string>
+    <string name="tv_3">3</string>
+    <string name="tv_4">4</string>
+    <string name="tv_5">5</string>
+    <string name="tv_6">6</string>
+    <string name="tv_7">7</string>
+    <string name="tv_8">8</string>
+    <string name="tv_9">9</string>
+    <string name="tv_ch">ch</string>
+
+    <!--DVD Buttons-->
+    <string name="dvd_text">Text</string>
+    <string name="dvd_help">Help</string>
+    <string name="dvd_menu">Menu</string>
+    <string name="dvd_guide">Guide</string>
+    <string name="dvd_pr">PR</string>
+
+    <!--Gate Buttons-->
+    <string name="gate_person">Pedestrian Open</string>
+    <string name="gate_car">Vehicle Open</string>
+    <string name="gate_open">Lock Gate Open</string>
+    <string name="gate_close">Close Gate</string>
+    <string name="gate_close_lock">Lock Gate Closed</string>
+
+    <!--Lights Deck-->
+    <string name="deck_lights_deck">Deck</string>
+    <string name="deck_lights_yard">Yard</string>
+
+    <!--Lights Entrance-->
+    <string name="entrance_lights_entrance">Entrance</string>
+    <string name="entrance_lights_outside">Outside</string>
+
+    <!--Lights Garage-->
+    <string name="garage_lights_garage">Garage</string>
+
+    <!--Lights TVRoom-->
+    <string name="tvroom_lights_front">Front</string>
+    <string name="tvroom_lights_rear">Rear</string>
+    <string name="tvroom_lights_feature">Feature</string>
+    <string name="tvroom_lights_save">Save Setup</string>
+
+    <!--Blinds-->
+    <string name="blinds_front">Front</string>
+    <string name="blinds_rear">Rear</string>
+    <string name="blinds_btn_open">Open</string>
+    <string name="blinds_btn_close">Close</string>
+    <string name="blinds_save">Save Setup</string>
+
+    <!--Radio-->
+    <string name="radio_preset_minus">Prev Preset</string>
+    <string name="radio_preset_plus">Next Preset</string>
+    <string name="radio_tune_minus">Tune Down</string>
+    <string name="radio_tune_plus">Tune Up</string>
+    <string name="preset_1">1. 90.6 ZM</string>
+    <string name="preset_2">2. 92.2 More FM</string>
+    <string name="preset_3">3. 93.0 The Edge</string>
+    <string name="preset_4">4. 93.8 Radio Live</string>
+    <string name="preset_5">5. 94.6 The Sound</string>
+    <string name="preset_6">6. 95.4 The Rock</string>
+    <string name="preset_7">7. 97.8 The Hits</string>
+    <string name="preset_8">8. 98.6 The Breeze</string>
+    <string name="preset_9">9. 99.4 Radio Control</string>
+    <string name="preset_10">10. 999 Access Manawatu</string>
+
+    <!--CD-->
+    <string name="cd_track_next">Next Track</string>
+    <string name="cd_track_prev">Prev Track</string>
+    <string name="cd_disc_next">Next Disc</string>
+    <string name="cd_disc_prev">Prev Disc</string>
+
+    <!--Heatpump-->
+    <string name="heatpump_current_temp">Cur</string>
+    <string name="heatpump_set_temp">Set</string>
+    <string name="heatpump_min_temp">16°</string>
+    <string name="heatpump_max_temp">35°</string>
+    <string name="heatpump_humidity">Humidity: 42%</string>
+    <string name="heatpump_str_off">Off</string>
+    <string name="heatpump_auto">Auto</string>
+    <string name="heatpump_str_heat">Heat</string>
+    <string name="heatpump_str_cool">Cool</string>
+    <string name="heatpump_high">High</string>
+    <string name="heatpump_med">Med</string>
+    <string name="heatpump_low">Low</string>
+    <string name="heatpump_mode">Mode</string>
+    <string name="heatpump_fan">Fan</string>
+    <string name="heatpump_power_mode">Power Saving Mode</string>
+
+    <!--Fragment Tag Strings-->
+    <string name="fragTag_blank">blank</string>
+    <string name="fragTag_tv">tv</string>
+    <string name="fragTag_dvd">dvd</string>
+    <string name="fragTag_game">game</string>
+    <string name="fragTag_cd">cd</string>
+    <string name="fragTag_radio">radio</string>
+    <string name="fragTag_heatpump">heatpump</string>
+    <string name="fragTag_blinds">blinds</string>
+    <string name="fragTag_security">security</string>
+    <string name="fragTag_doorlock">doorlock</string>
+    <string name="fragTag_gate">gate</string>
+    <string name="fragTag_power">power</string>
+    <string name="fragTag_weather">weather</string>
+    <string name="fragTag_system">system</string>
+    <string name="fragTag_alarm">alarm</string>
+    <string name="fragTag_lights_deck">lights_deck</string>
+    <string name="fragTag_lights_entrance">lights_entrance</string>
+    <string name="fragTag_lights_garage">lights_garage</string>
+    <string name="fragTag_lights_tvroom">lights_tvroom</string>
+
+    <!--Shared Preference Keys-->
+    <string name="key_FrontDoor_Lock">key_FrontDoor_Lock</string>
+    <string name="key_Gate_Mode">key_Gate_Mode</string>
+    <string name="key_Alarm_Status">key_Alarm_Status</string>
+    <string name="key_Alarm_Code">key_Alarm_Code</string>
+    <string name="key_Lights_Deck_Deck">key_Lights_Deck_Deck</string>
+    <string name="key_Lights_Deck_Yard">key_Lights_Deck_Yard</string>
+    <string name="key_Lights_Entrance_Entrance">key_Lights_Entrance_Entrance</string>
+    <string name="key_Lights_Entrance_Outside">key_Lights_Entrance_Outside</string>
+    <string name="key_Lights_Garage_Garage">key_Lights_Garage_Garage</string>
+    <string name="key_Lights_TVRoom_Front">key_Lights_TVRoom_Front</string>
+    <string name="key_Lights_TVRoom_Rear">key_Lights_TVRoom_Rear</string>
+    <string name="key_Lights_TVRoom_Feature">key_Lights_TVRoom_Feature</string>
+    <string name="key_Blinds_Front_TVRoom">key_Blinds_Front_TVRoom</string>
+    <string name="key_Blinds_Rear_TVRoom">key_Blinds_Rear_TVRoom</string>
+    <string name="key_Sky_TVRoom">key_Sky_TVRoom</string>
+    <string name="key_DVD_TVRoom">key_DVD_TVRoom</string>
+    <string name="key_Radio_TVRoom">key_Radio_TVRoom</string>
+    <string name="key_CD_TVRoom">key_CD_TVRoom</string>
+    <string name="key_Radio_Garage">key_Radio_Garage</string>
+    <string name="key_CD_Garage">key_CD_Garage</string>
+    <string name="key_Radio_Deck">key_Radio_Deck</string>
+    <string name="key_CD_Deck">key_CD_Deck</string>
+    <string name="key_TV_TVRoom">key_TV_TVRoom</string>
+    <string name="key_Heatpump_TVRoom_SetTemp">key_Heatpump_TVRoom_SetTemp</string>
+    <string name="key_Heatpump_TVRoom_CurTemp">key_Heatpump_TVRoom_CurTemp</string>
+    <string name="key_Heatpump_TVRoom_Mode">key_Heatpump_TVRoom_Mode</string>
+    <string name="key_Heatpump_TVRoom_Fan">key_Heatpump_TVRoom_Fan</string>
+    <string name="key_Heatpump_TVRoom_PowerSave">key_Heatpump_TVRoom_PowerSave</string>
+    <string name="key_Heatpump_Garage_SetTemp">key_Heatpump_Garage_SetTemp</string>
+    <string name="key_Heatpump_Garage_CurTemp">key_Heatpump_Garage_CurTemp</string>
+    <string name="key_Heatpump_Garage_Mode">key_Heatpump_Garage_Mode</string>
+    <string name="key_Heatpump_Garage_Fan">key_Heatpump_Garage_Fan</string>
+    <string name="key_Heatpump_Garage_PowerSave">key_Heatpump_Garage_PowerSave</string>
+    <string name="key_Heatpump_Entrance_SetTemp">key_Heatpump_Entrance_SetTemp</string>
+    <string name="key_Heatpump_Entrance_CurTemp">key_Heatpump_Entrance_CurTemp</string>
+    <string name="key_Heatpump_Entrance_Mode">key_Heatpump_Entrance_Mode</string>
+    <string name="key_Heatpump_Entrance_Fan">key_Heatpump_Entrance_Fan</string>
+    <string name="key_Heatpump_Entrance_PowerSave">key_Heatpump_Entrance_PowerSave</string>
+    <string name="key_House_Power">key_House_Power</string>
+    <string name="key_TVRoom_Power">key_TVRoom_Power</string>
+    <string name="key_TVRoom_Lights">key_TVRoom_Lights</string>
+    <string name="key_TVRoom_Heatpump">key_TVRoom_Heatpump</string>
+    <string name="key_TVRoom_Media">key_TVRoom_Media</string>
+    <string name="key_TVRoom_Volume">key_TVRoom_Volume</string>
+    <string name="key_TVRoom_Mute">key_TVRoom_Mute</string>
+    <string name="key_TVRoom_AVName">key_TVRoom_AVName</string>
+    <string name="key_TVRoom_RoomOff">key_TVRoom_RoomOff</string>
+    <string name="key_Entrance_Power">key_Entrance_Power</string>
+    <string name="key_Entrance_Lights">key_Entrance_Lights</string>
+    <string name="key_Entrance_Heatpump">key_Entrance_Heatpump</string>
+    <string name="key_Entrance_RoomOff">key_Entrance_RoomOff</string>
+    <string name="key_Garage_Power">key_Garage_Power</string>
+    <string name="key_Garage_Lights">key_Garage_Lights</string>
+    <string name="key_Garage_Heatpump">key_Garage_Heatpump</string>
+    <string name="key_Garage_Media">key_Garage_Media</string>
+    <string name="key_Garage_Volume">key_Garage_Volume</string>
+    <string name="key_Garage_Mute">key_Garage_Mute</string>
+    <string name="key_Garage_AVName">key_Garage_AVName</string>
+    <string name="key_Garage_RoomOff">key_Garage_RoomOff</string>
+    <string name="key_Deck_Power">key_Deck_Power</string>
+    <string name="key_Deck_Lights">key_Deck_Lights</string>
+    <string name="key_Deck_Media">key_Deck_Media</string>
+    <string name="key_Deck_Volume">key_Deck_Volume</string>
+    <string name="key_Deck_Mute">key_Deck_Mute</string>
+    <string name="key_Deck_AVName">key_Deck_AVName</string>
+    <string name="key_Deck_RoomOff">key_Deck_RoomOff</string>
+    <string name="key_Tab_Active">key_Tab_Active</string>
+
+    <!--AV Names-->
+    <string name="av_tv">MySkyHD</string>
+    <string name="av_dvd">DVD</string>
+    <string name="av_game">XBox</string>
+    <string name="av_radio">Radio</string>
+    <string name="av_cd">CD</string>
+
+    <string name="hello_security_fragment">This would show the interface to the home security camera system.</string>
+</resources>

@@ -1,0 +1,281 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Tab_Entrance_Fragment"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonPanel">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_door"
+                    android:textOff="@string/door_lock"
+                    android:textOn="@string/door_lock"
+                    android:tag="@string/fragTag_doorlock" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_alarm_on"
+                    android:textOff="@string/alarm_on"
+                    android:textOn="@string/alarm_on"
+                    android:tag="@string/fragTag_alarm" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_light_on"
+                    android:textOff="@string/lights_on"
+                    android:textOn="@string/lights_on"
+                    android:tag="@string/fragTag_lights_entrance"
+                    android:drawableLeft="@drawable/icon_light" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_heatpump_auto"
+                    android:textOff="@string/heatpump"
+                    android:textOn="@string/heatpump"
+                    android:tag="@string/fragTag_heatpump"
+                    android:drawableLeft="@drawable/icon_auto" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_room_off"
+                    android:textOff="@string/room_off"
+                    android:textOn="@string/room_off"
+                    android:tag="@string/fragTag_blank"
+                    android:checked="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_gate"
+                    android:textOff="@string/gate"
+                    android:textOn="@string/gate"
+                    android:tag="@string/fragTag_gate" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_alarm_off"
+                    android:textOff="@string/alarm_off"
+                    android:textOn="@string/alarm_off"
+                    android:tag="@string/fragTag_alarm" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_off"
+                    android:textOff="@string/lights_off"
+                    android:textOn="@string/lights_off"
+                    android:tag="@string/fragTag_lights_entrance" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_heatpump_heat"
+                    android:textOff="@string/heatpump_heat"
+                    android:textOn="@string/heatpump_heat"
+                    android:tag="@string/fragTag_heatpump"
+                    android:drawableLeft="@drawable/icon_heat" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_heatpump_cool"
+                    android:textOff="@string/heatpump_cool"
+                    android:textOn="@string/heatpump_cool"
+                    android:tag="@string/fragTag_heatpump"
+                    android:drawableLeft="@drawable/icon_cool" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_heatpump_off"
+                    android:textOff="@string/heatpump_off"
+                    android:textOn="@string/heatpump_off"
+                    android:tag="@string/fragTag_blank" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlPanel"
+        android:name="org.dewaal.dan.dwhomecontrol.Control_Blank_Fragment"
+        android:id="@+id/control_fragment_entrance" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="--/--"
+            android:layout_width="@dimen/small_button"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_temp"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/icon_red"
+            android:layout_gravity="center"
+            android:tag="@string/fragTag_heatpump" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_doorlock_unlock"
+            android:id="@+id/img_door"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_doorlock" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_gate_closed"
+            android:id="@+id/img_gate"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_gate" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_alarm_off"
+            android:id="@+id/img_alarm"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_alarm" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/roominfo_light_off"
+            android:id="@+id/img_light"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_entrance" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/roominfo_power_0"
+            android:id="@+id/img_power"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="room_power">
+        <item>@drawable/roominfo_power_0</item>
+        <item>@drawable/roominfo_power_1</item>
+        <item>@drawable/roominfo_power_2</item>
+        <item>@drawable/roominfo_power_3</item>
+        <item>@drawable/roominfo_power_4</item>
+        <item>@drawable/roominfo_power_5</item>
+    </integer-array>
+    <integer-array name="house_power">
+        <item>@drawable/homeinfo_power_0</item>
+        <item>@drawable/homeinfo_power_1</item>
+        <item>@drawable/homeinfo_power_2</item>
+        <item>@drawable/homeinfo_power_3</item>
+        <item>@drawable/homeinfo_power_4</item>
+        <item>@drawable/homeinfo_power_5</item>
+        <item>@drawable/homeinfo_power_6</item>
+        <item>@drawable/homeinfo_power_7</item>
+        <item>@drawable/homeinfo_power_8</item>
+        <item>@drawable/homeinfo_power_9</item>
+        <item>@drawable/homeinfo_power_10</item>
+    </integer-array>
+</resources>

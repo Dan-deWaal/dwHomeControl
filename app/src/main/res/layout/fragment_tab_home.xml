@@ -1,0 +1,288 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Tab_Home_Fragment"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonPanel"
+            android:padding="5dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:text="@string/door_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_door"
+                    android:textOff="@string/door_lock"
+                    android:textOn="@string/door_lock"
+                    android:tag="@string/fragTag_doorlock" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_alarm_on"
+                    android:textOff="@string/alarm_on"
+                    android:textOn="@string/alarm_on"
+                    android:tag="alarm"
+                    android:layout_marginLeft="@dimen/button_padding_half" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_deck"
+                    android:textOff="@string/lights_deck"
+                    android:textOn="@string/lights_deck"
+                    android:tag="@string/fragTag_lights_deck" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_power"
+                    android:textOff="@string/power"
+                    android:textOn="@string/power"
+                    android:tag="@string/fragTag_power" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_alarm_off"
+                    android:textOff="@string/alarm_off"
+                    android:textOn="@string/alarm_off"
+                    android:tag="alarm"
+                    android:layout_marginLeft="@dimen/button_padding_half" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_entrance"
+                    android:textOff="@string/lights_entrance"
+                    android:textOn="@string/lights_entrance"
+                    android:tag="@string/fragTag_lights_entrance" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_system"
+                    android:textOff="@string/system"
+                    android:textOn="@string/system"
+                    android:tag="@string/fragTag_system" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_gate"
+                    android:textOff="@string/gate"
+                    android:textOn="@string/gate"
+                    android:tag="gate" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_security"
+                    android:textOff="@string/security"
+                    android:textOn="@string/security"
+                    android:tag="security"
+                    android:layout_marginLeft="@dimen/button_padding_half" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_garage"
+                    android:textOff="@string/lights_garage"
+                    android:textOn="@string/lights_garage"
+                    android:tag="@string/fragTag_lights_garage" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_weather"
+                    android:textOff="@string/weather"
+                    android:textOn="@string/weather"
+                    android:tag="@string/fragTag_weather" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_all_off"
+                    android:textOff="@string/lights_all_off"
+                    android:textOn="@string/lights_all_off"
+                    android:tag="@string/fragTag_blank" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlPanel"
+        android:name="org.dewaal.dan.dwhomecontrol.Control_Blank_Fragment"
+        android:id="@+id/control_fragment_home" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_doorlock_unlock"
+            android:id="@+id/img_door"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_doorlock" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_gate_closed"
+            android:id="@+id/img_gate"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_gate" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_alarm_off"
+            android:id="@+id/img_alarm"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_alarm" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_light_tvroom_off"
+            android:id="@+id/img_light_tvroom"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_tvroom" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_light_entrance_off"
+            android:id="@+id/img_light_entrance"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_entrance" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_light_garage_off"
+            android:id="@+id/img_light_garage"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_garage" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_light_deck_off"
+            android:id="@+id/img_light_deck"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_deck" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_power_0"
+            android:id="@+id/img_power"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_power" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/homeinfo_system_ok"
+            android:id="@+id/img_system"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_system" />
+
+    </LinearLayout>
+
+</LinearLayout>

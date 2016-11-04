@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tab_img_l1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/button_padding_half"
+        android:id="@+id/tab_img_l2"
+        android:layout_gravity="right|center_vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tab"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/button_padding_half"
+        android:id="@+id/tab_img_l1"
+        android:layout_gravity="right|center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:textColor="?attr/colorControlNormal"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tab"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/button_padding_half"
+        android:id="@+id/tab_img_r1"
+        android:layout_gravity="left|center_vertical" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tab_img_r1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/button_padding_half"
+        android:id="@+id/tab_img_r2"
+        android:layout_gravity="left|center_vertical" />
+</RelativeLayout>

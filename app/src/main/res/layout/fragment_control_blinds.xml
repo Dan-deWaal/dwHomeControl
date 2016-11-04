@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_Blinds_Fragment">
+
+    <TableLayout
+        android:layout_width="@dimen/controlPanel_half"
+        android:layout_height="@dimen/controlPanel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Space
+                android:layout_width="@dimen/blank_button_width"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="@dimen/sliderbar_width"
+                android:layout_height="@dimen/blank_button_height" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/blinds_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_blinds_front"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="@dimen/button_padding_half" />
+
+            <Button
+                android:text="@string/blinds_btn_close"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blinds_front_close"
+                android:textSize="12sp" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sld_front_blinds"
+                android:layout_gravity="center_vertical"
+                android:max="10" />
+
+            <Button
+                android:text="@string/blinds_btn_open"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blinds_front_open"
+                android:textSize="12sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/blinds_rear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_blinds_rear"
+                android:textColor="@android:color/black"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="@dimen/button_padding_half"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp" />
+
+            <Button
+                android:text="@string/blinds_btn_close"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blinds_rear_close"
+                android:textSize="12sp" />
+
+            <SeekBar
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sld_rear_blinds"
+                android:max="10"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:text="@string/blinds_btn_open"
+                android:layout_width="@dimen/small_button"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_blinds_rear_open"
+                android:textSize="12sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="@string/tvroom_lights_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tableLayout"
+        android:layout_marginLeft="@dimen/blank_button_width"
+        android:layout_marginTop="120dp"
+        android:id="@+id/btn_blinds_save" />
+
+</RelativeLayout>

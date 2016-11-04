@@ -1,0 +1,249 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_Heatpump_Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlPanel">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_display_set_temp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            android:text="20°" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_display_set_temp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/table_seekbars">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="@dimen/small_button"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="@dimen/controlPanel_half"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="@dimen/small_button"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="@string/heatpump_current_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_cur_temp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="center_vertical" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!--<ProgressBar-->
+                    <!--style="?android:attr/progressBarStyleHorizontal"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/prg_cur_temp"-->
+                    <!--android:max="20"-->
+                    <!--android:visibility="visible" />-->
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="20"
+                    android:progress="0"
+                    android:id="@+id/sld_cur_temp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="@string/heatpump_humidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_humidity"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_vertical" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:text="@string/heatpump_set_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_set_temp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="@string/heatpump_min_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_min_temp"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="textEnd"
+                    android:layout_gravity="center_vertical" />
+
+                <SeekBar
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="20"
+                    android:id="@+id/sld_set_temp"
+                    android:progress="10" />
+
+                <TextView
+                    android:text="@string/heatpump_max_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_max_temp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center_vertical" />
+            </TableRow>
+
+        </TableLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/mode_group"
+            android:layout_below="@+id/table_seekbars"
+            android:layout_alignLeft="@+id/table_seekbars"
+            android:layout_marginLeft="174dp">
+
+            <TextView
+                android:text="@string/heatpump_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_mode"
+                android:textColor="@android:color/black"
+                android:textAlignment="center" />
+
+            <RadioButton
+                android:text="@string/heatpump_str_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_off"
+                android:textColor="@android:color/black"
+                android:checked="true" />
+
+            <RadioButton
+                android:text="@string/heatpump_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_auto"
+                android:textColor="@android:color/holo_green_dark" />
+
+            <RadioButton
+                android:text="@string/heatpump_str_cool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_cool"
+                android:textColor="@android:color/holo_blue_dark" />
+
+            <RadioButton
+                android:text="@string/heatpump_str_heat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_heat"
+                android:textColor="@android:color/holo_red_dark" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/table_seekbars"
+            android:layout_toRightOf="@+id/mode_group"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:id="@+id/fan_group">
+
+            <TextView
+                android:text="@string/heatpump_fan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/txt_fan"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:text="@string/heatpump_auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_fan_auto"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:checked="true" />
+
+            <RadioButton
+                android:text="@string/heatpump_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_fan_low"
+                android:layout_weight="1"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:text="@string/heatpump_med"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_fan_med"
+                android:layout_weight="1"
+                android:textColor="@android:color/black" />
+
+            <RadioButton
+                android:text="@string/heatpump_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rd_fan_high"
+                android:layout_weight="1"
+                android:textColor="@android:color/black" />
+        </RadioGroup>
+
+        <Switch
+            android:text="@string/heatpump_power_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/table_seekbars"
+            android:layout_marginRight="161dp"
+            android:id="@+id/sw_power_mode"
+            android:switchPadding="@dimen/button_padding_half"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</FrameLayout>

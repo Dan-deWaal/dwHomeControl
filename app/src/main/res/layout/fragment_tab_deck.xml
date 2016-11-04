@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Tab_Deck_Fragment"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttonPanel"
+            android:padding="@dimen/button_padding_half">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_radio"
+                    android:textOff="@string/radio"
+                    android:textOn="@string/radio"
+                    android:tag="@string/fragTag_radio"
+                    android:drawableRight="@drawable/speaker" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_on"
+                    android:textOff="@string/lights_on"
+                    android:textOn="@string/lights_on"
+                    android:tag="@string/fragTag_lights_deck"
+                    android:drawableLeft="@drawable/icon_light" />
+
+                <Space
+                    android:layout_width="@dimen/blank_button_width"
+                    android:layout_height="@dimen/blank_button_height" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_room_off"
+                    android:textOff="@string/room_off"
+                    android:textOn="@string/room_off"
+                    android:tag="@string/fragTag_blank"
+                    android:checked="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_cd"
+                    android:textOff="@string/cd"
+                    android:textOn="@string/cd"
+                    android:tag="@string/fragTag_cd"
+                    android:drawableRight="@drawable/speaker" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_lights_off"
+                    android:textOff="@string/lights_off"
+                    android:textOn="@string/lights_off"
+                    android:tag="@string/fragTag_lights_deck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgl_media_off"
+                    android:textOff="@string/media_off"
+                    android:textOn="@string/media_off"
+                    android:tag="@string/fragTag_blank" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/button_padding_half">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </FrameLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlPanel"
+        android:name="org.dewaal.dan.dwhomecontrol.Control_Blank_Fragment"
+        android:id="@+id/control_fragment_deck" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/roominfo_light_off"
+            android:id="@+id/img_light"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:tag="@string/fragTag_lights_deck" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/roominfo_power_0"
+            android:id="@+id/img_power"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="@dimen/av_button_width"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_avname"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:id="@+id/img_prev"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_rew"
+            android:id="@+id/img_rew"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:id="@+id/img_play"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_pause"
+            android:id="@+id/img_pause"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_ff"
+            android:id="@+id/img_ff"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:id="@+id/img_next"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_lock_ringer_on"
+            android:id="@+id/img_sound"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@android:color/black"
+            android:background="@android:drawable/btn_default" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tv_minus"
+            android:id="@+id/img_vol_down"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_default" />
+
+        <TextView
+            android:text="Vol: 12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_vol"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:background="@android:drawable/btn_default"
+            android:gravity="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/tv_plus"
+            android:id="@+id/img_vol_up"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@android:drawable/btn_default" />
+
+    </LinearLayout>
+
+</LinearLayout>

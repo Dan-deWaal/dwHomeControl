@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_DoorLock_Fragment"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/controlPanel">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/stock_lock_open"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_lock_status" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_lock_status"
+            android:layout_toLeftOf="@+id/img_lock_status"
+            android:layout_marginRight="@dimen/blank_button_width">
+
+            <Button
+                android:text="@string/lock_door"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_unlock"
+                android:layout_alignBottom="@+id/btn_unlock"
+                android:layout_toRightOf="@+id/img_lock_status"
+                android:id="@+id/btn_lock"
+                android:layout_marginBottom="@dimen/button_padding_half" />
+
+            <Button
+                android:text="@string/unlock_door"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_lock_status"
+                android:id="@+id/btn_unlock"
+                android:layout_marginTop="@dimen/button_padding_half" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/picture_door"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img_lock_status"
+            android:layout_marginLeft="@dimen/blank_button_width"
+            android:id="@+id/imageView3" />
+
+        <Button
+            android:text="Intercom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_intercom"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="68dp" />
+
+    </RelativeLayout>
+</LinearLayout>

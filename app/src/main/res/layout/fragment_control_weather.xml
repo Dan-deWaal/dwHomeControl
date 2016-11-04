@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.dewaal.dan.dwhomecontrol.Control_Weather_Fragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text="Weather View not yet implemented"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/button_padding" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/weather_ex"
+        android:id="@+id/imageView4"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
